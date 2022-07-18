@@ -19,7 +19,8 @@ public class Main {
         curso2.setDescricao("Conheça o Paradigma Orientado a Objetos!");
         curso2.setCargaHoraria(16);
 
-        System.out.println(curso2);
+        System.out.println(curso2.getTitulo());
+        System.out.println(curso2.getCargaHoraria());
 
         Mentoria mentoria1 = new Mentoria();
         mentoria1.setTitulo("1ª Mentoria de Java");
