@@ -6,6 +6,7 @@ import me.dio.academia.digital.service.impl.AvaliacaoFisicaImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -16,7 +17,7 @@ public class AvaliacaoFisicaController {
     private AvaliacaoFisicaImpl service;
 
     @PostMapping
-    public AvaliacaoFisica createAvaliacao(@RequestBody AvaliacaoFisicaForm form)
+    public AvaliacaoFisica createAvaliacao(@Valid @RequestBody AvaliacaoFisicaForm form)
     {
         return service.create(form);
     }
